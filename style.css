@@ -16,20 +16,21 @@
   font-weight: 700;
   src: url('https://fonts.gstatic.com/s/spacegrotesk/v16/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7aUXskPMBBSSJLm2E.woff2') format('woff2');
   font-display: swap;
-} 
+}
 
-/* Css Variables */
-
+/* CSS Variables */
+/* Define global variables for consistent styling */
 :root {
-  --color-primary: #00f5d4; 
-  --color-secondary: #f15bb5; 
-  --color-accent: #9b5de5; 
-  --color-background: #0a0a0a;
-  --color-surface: #1a1a1a; 
-  --color-text: #ffffff; 
-  --color-text-light: #b3b3b3;
-  --color-border: #333333; 
-}  
+  /* Colors */
+  --color-primary: #00f5d4;    /* Electric cyan for primary elements */
+  --color-secondary: #f15bb5;  /* Hot pink for secondary elements */
+  --color-accent: #9b5de5;     /* Purple for accents */
+  --color-background: #0a0a0a; /* Dark background */
+  --color-surface: #1a1a1a;    /* Slightly lighter surface color */
+  --color-text: #ffffff;       /* White text */
+  --color-text-light: #b3b3b3; /* Light gray for secondary text */
+  --color-border: #333333;     /* Dark gray for borders */
+  
   /* Typography */
   --font-family: 'Space Grotesk', monospace;
   --font-size-base: 1.125rem;
@@ -58,21 +59,22 @@
   --transition-fast: 200ms;
   --transition-normal: 400ms;
   --transition-slow: 600ms;
+}
 
-  /* Reset and base styles*/
-  *, *::before, *::after { 
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0; 
-  }
+/* Reset & Base Styles */
+/* Reset default browser styles and set base styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  html { 
-    font-size: 16px; 
-    scroll-behavior: smooth;
-  }
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
 
-  /* base boidy styles with gradient background*/
-
+/* Base body styles with gradient background */
 body {
   font-family: var(--font-family);
   line-height: 1.6;
@@ -343,32 +345,33 @@ code {
 
 /* Accessibility */
 /* Reduced motion preferences */
-
-
-@media  (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0,01ms !important;
+    transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-} 
+}
 
-/*print styles*/
+/* Print Styles */
+/* Print-specific styles */
 @media print {
   body {
     background-color: white;
     color: black;
   }
+  
   nav, .page-footer {
     display: none;
   }
+  
   article {
-    box-shadow: none;
+    box-shadow     none;
     border: 1px solid var(--color-border);
   }
-
-  h1 { 
+  
+  h1 {
     -webkit-text-fill-color: var(--color-primary);
     background: none;
   }
