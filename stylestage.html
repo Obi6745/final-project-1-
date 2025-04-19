@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Basic meta tags for character encoding and viewport -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Page title and description -->
     <title>[Your Style Title] by [Your Name] | Style Stage</title>
     <meta name="description" content="[Your optional description]" />
+    <!-- Link to the stylesheet -->
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- Skip link for accessibility - allows keyboard users to skip to main content -->
     <a href="#main" class="skip-link">Skip to main content</a>
+    
+    <!-- Main header section with title and description -->
     <header>
       <div class="container">
         <h1>Style Stage</h1>
@@ -17,6 +23,7 @@
           Maintained by <a href="https://twitter.com/5t3ph">Stephanie Eckles</a> of
           <a href="https://moderncss.dev">ModernCSS.dev</a>
         </p>
+        <!-- GitHub star button with SVG icon -->
         <a href="https://github.com/5t3ph/stylestage" class="link-github"
           ><span
             ><svg
@@ -34,22 +41,27 @@
         >
       </div>
     </header>
+
+    <!-- Main navigation menu -->
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#guidelines">Guidelines</a></li>
         <li><a href="#contribute">Contribute</a></li>
         <li><a href="#files">Files</a></li>
-        <li><a href="/styles/">All Styles</a></li>
-        <li><a href="/resources/">Resources</a></li>
+        <li><a href="https://stylestage.dev/styles/">All Styles</a></li>
+        <li><a href="https://stylestage.dev/resources/">Resources</a></li>
       </ul>
     </nav>
 
+    <!-- Main content area -->
     <main id="main" tabIndex="-1">
       <div class="container">
+        <!-- About section -->
         <article id="about">
           <section class="container">
             <h2>Setting the Stage</h2>
+            <!-- Content about the project's history and purpose -->
             <p>
               In 2003, <a href="http://daveshea.com/projects/zen/">Dave Shea</a> began a legendary
               project called <a href="http://www.csszengarden.com/">CSS Zen Garden</a> that provided
@@ -61,6 +73,7 @@
               the base HTML for contributors - like you! - to re-style by submitting an alternate
               stylesheet.
             </p>
+            <!-- Blockquote explaining how the project works -->
             <blockquote>
               <p>
                 <strong>How it works:</strong> Visit the
@@ -70,6 +83,7 @@
                 <a href="#contribute">submit a stylesheet</a>!
               </p>
             </blockquote>
+            <!-- Technical details about the HTML structure -->
             <p>
               The HTML for this page was created to be semantic, accessible, and free of nearly all
               other opinions. Nested sectioning elements with the class `.container` serve as
@@ -79,6 +93,7 @@
               `.skip-link`!
             </p>
           </section>
+          <!-- Modern CSS features section -->
           <section class="container">
             <h2>Modern CSS Under the Spotlight</h2>
             <p>
@@ -115,6 +130,8 @@
             </p>
           </section>
         </article>
+
+        <!-- Guidelines section -->
         <article id="guidelines">
           <section class="container">
             <h2>Guidelines</h2>
@@ -123,6 +140,7 @@
               <a href="/guidelines/">our full guidelines</a>.
             </p>
             <h3>TL;DR</h3>
+            <!-- Summary of guidelines -->
             <p>
               All submissions will be autoprefixed and prepended with the
               <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA license</a>
@@ -147,6 +165,8 @@
             <a href="/guidelines/" class="link-guidelines">Review full guidelines</a>
           </section>
         </article>
+
+        <!-- Contribute section -->
         <article id="contribute">
           <section class="container">
             <h2>Contribute</h2>
@@ -158,6 +178,7 @@
               to.
             </p>
           </section>
+          <!-- Steps to contribute -->
           <section class="container">
             <h3>Steps to Contribute</h3>
             <ol>
@@ -183,6 +204,7 @@
               </li>
             </ol>
           </section>
+          <!-- Source files section -->
           <footer id="files">
             <div class="container">
               <h3>Source Files</h3>
@@ -201,6 +223,8 @@
         </article>
       </div>
     </main>
+
+    <!-- Profile sidebar -->
     <aside class="profile" aria-labelledby="profile-title">
       <div class="container">
         <h4 id="profile-title">Currently Staged Style</h4>
@@ -217,6 +241,8 @@
         <a href="/styles/css/main-stage.css">View Stylesheet</a>
       </div>
     </aside>
+
+    <!-- Featured styles section -->
     <aside id="styles">
       <div class="container">
         <h2>Featured Styles</h2>
@@ -244,6 +270,8 @@
         <a href="/styles/" class="link-allstyles">View All Styles</a>
       </div>
     </aside>
+
+    <!-- Footer section -->
     <footer class="page-footer">
       <div class="container">
         <p>
