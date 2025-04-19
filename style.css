@@ -17,3 +17,49 @@
   src: url('https://fonts.gstatic.com/s/spacegrotesk/v16/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7aUXskPMBBSSJLm2E.woff2') format('woff2');
   font-display: swap;
 } 
+
+/* Css Variables */
+
+:root {
+  --color-primary: #00f5d4; 
+  --color-secondary: #f15bb5; 
+  --color-accent: #9b5de5; 
+  --color-background: #0a0a0a;
+  --color-surface: #1a1a1a; 
+  --color-text: #ffffff; 
+  --color-text-light: #b3b3b3;
+  --color-border: #333333; 
+}  
+  /* Typography */
+  --font-family: 'Space Grotesk', monospace;
+  --font-size-base: 1.125rem;
+  --font-size-sm: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 2.5rem;
+  --font-size-4xl: 3rem;
+  --font-size-5xl: 4rem;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 3rem;
+  --spacing-xl: 4rem;
+  --spacing-2xl: 6rem;
+  
+  /* Border Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  
+  /* Transitions */
+  --transition-fast: 200ms;
+  --transition-normal: 400ms;
+  --transition-slow: 600ms;
+
+
+
+
+
