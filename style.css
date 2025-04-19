@@ -96,7 +96,58 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
+/* Main heading with gradient text and glow animation */
+h1 {
+  font-size: var(--font-size-5xl);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 20px rgba(0, 245, 212, 0.3);
+  position: relative;
+  display: inline-block;
+  animation: glow 3s ease-in-out infinite;
+}
 
+/* H1 underline animation */
+h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition-normal) ease;
+}
+
+h1:hover::after {
+  transform: scaleX(1);
+}
+
+/* Secondary heading with decorative prefix */
+h2 {
+  font-size: var(--font-size-4xl);
+  color: var(--color-primary);
+  position: relative;
+  display: inline-block;
+  padding-bottom: var(--spacing-xs);
+}
+
+h2::before {
+  content: '//';
+  color: var(--color-secondary);
+  margin-right: var(--spacing-sm);
+}
+
+/* Paragraph styles */
+p {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-light);
+  font-size: var(--font-size-base);
+  line-height: 1.8;
+}
 
 
 
